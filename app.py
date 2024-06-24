@@ -12,7 +12,7 @@ if 'button_clicked' not in st.session_state:
 # Simple password input
 password = st.text_input("Enter the password", type="password")
 
-group_size = 3
+group_size = st.number_input("group_size", value=4)
 # Check if the correct password is entered
 if password == pass_answer:
     # Button to trigger the create_groups function
