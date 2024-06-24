@@ -27,5 +27,5 @@ if password == pass_answer:
 
 # Display the dataframe only if the button has not been clicked
 if not st.session_state['button_clicked']:
-    df = pd.read_csv('data/file.csv')
+    df = pd.read_csv('data/file.csv', header=None)
     st.dataframe(df)
