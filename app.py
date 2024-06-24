@@ -20,7 +20,7 @@ if password == pass_answer:
         st.session_state['button_clicked'] = True  # Update the state to indicate the button has been clicked
         groups = create_groups(group_size)
         st.write('Groups created:')
-        df = pd.read_csv('data/file.csv')
+        df = pd.read_csv('data/file.csv', header=None)
         st.dataframe(df)
     else:
         st.write('Please enter the correct password')
